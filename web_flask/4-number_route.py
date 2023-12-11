@@ -47,8 +47,7 @@ def is_number(n):
     """
     Dynamic routing
     """
-    if isinstance(n, int):
-        return str(n) + ' is a number'
+    return str(n) + ' is a number'
 
 
 if __name__ == "__main__":
