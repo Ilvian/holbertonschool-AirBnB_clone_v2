@@ -34,6 +34,7 @@ def c_is_fun(text):
     return 'C ' + text.replace('_', ' ')
 
 
+@app.route('/python/')
 @app.route('/python/<text>', strict_slashes=False)
 def python_is_cool(text='is cool'):
     """
