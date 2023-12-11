@@ -42,13 +42,12 @@ def python_is_cool(text='is cool'):
     return 'Python ' + text.replace('_', ' ')
 
 
-@app.route('/number/<n>', strict_slashes=False)
+@app.route('/number/<int:n>', strict_slashes=False)
 def is_number(n):
     """
     Dynamic routing
     """
-    if isinstance(n, int):
-        return str(n) + ' is a number'
+    return str(n) + ' is a number'
 
 
 if __name__ == "__main__":
