@@ -35,6 +35,7 @@ def c_is_fun(text):
     return 'C ' + text.replace('_', ' ')
 
 
+@app.route('/python/')
 @app.route('/python/<text>', strict_slashes=False)
 def python_is_cool(text='is cool'):
     """
@@ -51,6 +52,7 @@ def is_number(n):
     return str(n) + ' is a number'
 
 
+@app.route('/number_template/<int:n>', strict_slashes=False)
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
     """
